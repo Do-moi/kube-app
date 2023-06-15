@@ -19,7 +19,7 @@ spec:
           image: mjdev77340/vprofiledb:V1
           args:
             - "--ignore-db-dir=lost+found"
-          volumeMounths:
+          volumeMounts:
             - mountPath: /var/lib/mysql
               name: vpro-db-data
           ports:
